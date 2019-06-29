@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: #008080;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.EditShortyController">
+    <children>
+        <AnchorPane layoutY="93.0" prefHeight="556.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label layoutX="134.0" layoutY="33.0" text="Редактирование персонажа">
+                    <font>
+                        <Font name="Courier New Bold" size="23.0" />
+                    </font>
+                </Label>
+            <Button fx:id="backButton" layoutX="215.0" layoutY="488.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="169.0" style="-fx-background-color: #B0E0E6; -fx-background-radius: 5;" text="Подтвердить">
+               <font>
+                  <Font name="Courier New Bold" size="18.0" />
+               </font>
+            </Button>
+            <GridPane layoutX="84.0" layoutY="109.0" prefHeight="338.0" prefWidth="430.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER_RIGHT" text="Имя коротышки:">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameField" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER_RIGHT" text="Тип одежды:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" text="Цвет одежды:" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" text="Координата X:" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" text="Координата Y:" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" text="Количество денег:" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" text="Валюта:" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" text="Социальный статус:" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Courier New" size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="clothesTypeCB" prefHeight="26.0" prefWidth="227.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="clothesColorCB" prefHeight="26.0" prefWidth="227.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="statusCB" prefHeight="26.0" prefWidth="227.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="coordXCB" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="coordYCB" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="moneyAmountCB" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="currencyCB" prefHeight="26.0" prefWidth="227.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+            </children>
+        </AnchorPane>
+        <Label layoutX="153.0" layoutY="27.0" text="Shorty Manager">
+            <font>
+                <Font name="Courier New Bold" size="35.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
